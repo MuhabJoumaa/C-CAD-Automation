@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CONVERTLIBINTERFACES">
+      <HintPath>..\CONVERTLIBINTERFACES.dll</HintPath>
+    </Reference>
+    <Reference Include="KAPITypes">
+      <HintPath>..\KAPITypes.dll</HintPath>
+    </Reference>
+    <Reference Include="KGAXLib">
+      <HintPath>..\KGAXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Kompas6API2D5COM">
+      <HintPath>..\Kompas6API2D5COM.dll</HintPath>
+    </Reference>
+    <Reference Include="Kompas6API3D5COM">
+      <HintPath>..\Kompas6API3D5COM.dll</HintPath>
+    </Reference>
+    <Reference Include="Kompas6API5">
+      <HintPath>..\Kompas6API5.dll</HintPath>
+    </Reference>
+    <Reference Include="Kompas6Constants">
+      <HintPath>..\Kompas6Constants.dll</HintPath>
+    </Reference>
+    <Reference Include="Kompas6Constants3D">
+      <HintPath>..\Kompas6Constants3D.dll</HintPath>
+    </Reference>
+    <Reference Include="KompasAPI7">
+      <HintPath>..\KompasAPI7.dll</HintPath>
+    </Reference>
+    <Reference Include="KompasLibrary">
+      <HintPath>..\KompasLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="VCHATCHLib">
+      <HintPath>..\VCHATCHLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

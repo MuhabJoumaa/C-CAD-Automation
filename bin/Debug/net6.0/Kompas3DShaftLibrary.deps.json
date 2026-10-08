@@ -1,0 +1,179 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Kompas3DShaftLibrary/1.0.0": {
+        "dependencies": {
+          "CONVERTLIBINTERFACES": "1.0.0.0",
+          "KAPITypes": "0.0.0.0",
+          "KGAXLib": "1.0.0.0",
+          "Kompas6API2D5COM": "1.0.0.0",
+          "Kompas6API3D5COM": "1.0.0.0",
+          "Kompas6API5": "1.0.0.0",
+          "Kompas6Constants": "1.0.0.0",
+          "Kompas6Constants3D": "1.0.0.0",
+          "KompasAPI7": "1.0.0.0",
+          "KompasLibrary": "1.0.0.0",
+          "VCHATCHLib": "1.0.0.0"
+        },
+        "runtime": {
+          "Kompas3DShaftLibrary.dll": {}
+        }
+      },
+      "CONVERTLIBINTERFACES/1.0.0.0": {
+        "runtime": {
+          "CONVERTLIBINTERFACES.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KAPITypes/0.0.0.0": {
+        "runtime": {
+          "KAPITypes.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "KGAXLib/1.0.0.0": {
+        "runtime": {
+          "KGAXLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kompas6API2D5COM/1.0.0.0": {
+        "runtime": {
+          "Kompas6API2D5COM.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kompas6API3D5COM/1.0.0.0": {
+        "runtime": {
+          "Kompas6API3D5COM.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kompas6API5/1.0.0.0": {
+        "runtime": {
+          "Kompas6API5.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kompas6Constants/1.0.0.0": {
+        "runtime": {
+          "Kompas6Constants.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Kompas6Constants3D/1.0.0.0": {
+        "runtime": {
+          "Kompas6Constants3D.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KompasAPI7/1.0.0.0": {
+        "runtime": {
+          "KompasAPI7.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KompasLibrary/1.0.0.0": {
+        "runtime": {
+          "KompasLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "VCHATCHLib/1.0.0.0": {
+        "runtime": {
+          "VCHATCHLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kompas3DShaftLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CONVERTLIBINTERFACES/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KAPITypes/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KGAXLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kompas6API2D5COM/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kompas6API3D5COM/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kompas6API5/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kompas6Constants/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kompas6Constants3D/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KompasAPI7/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KompasLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VCHATCHLib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
