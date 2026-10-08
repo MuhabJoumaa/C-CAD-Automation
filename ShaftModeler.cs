@@ -56,7 +56,14 @@ namespace Kompas3DShaftLibrary
             {
                 throw new InvalidOperationException("Failed to get top part.");
             }
+            double flangeThickness = diameter * 0.2;
+            double flangeDiameter = diameter * 1.5;
+            double keyWidth = diameter * 0.25;
+            double keyDepth = diameter * 0.125;
+            double keyLength = length * 0.3;
             CreateCylindricalBody(part, length, diameter);
+            CreateFlange(part, flangeThickness, flangeDiameter);
+            CreateKeyway(part, keyWidth, keyDepth, keyLength);
         }
 
         private static void CreateCylindricalBody(ksPart part, double length, double diameter)
@@ -67,6 +74,39 @@ namespace Kompas3DShaftLibrary
             sketchEdit?.ksCircle(0, 0, diameter / 2, 1);
             sketchDef?.EndEdit();
             CreateExtrusion(part, sketch, length);
+        }
+
+        private static void CreateFlange(ksPart part, double thickness, double diameter)
+        {
+            ksEntity? sketch = CreateSketch(part, (short)Obj3dType.o3d_planeXOY);
+            ksSketchDefinition? sketchDef = (ksSketchDefinition?)sketch.GetDefinition();
+            ksDocument2D? sketchEdit = (ksDocument2D?)sketchDef?.BeginEdit();
+            sketchEdit?.ksCircle(0, 0, diameter / 2, 1);
+            sketchDef?.EndEdit();
+            CreateExtrusion(part, sketch, thickness);
+        }
+
+        private void CreateKeyway(ksPart part, double width, double depth, double length)
+        {
+            ksEntity? sketch = CreateSketch(part, (short)Obj3dType.o3d_planeXOZ);
+            ksSketchDefinition? sketchDef = (ksSketchDefinition?)sketch.GetDefinition();
+            ksDocument2D? sketchEdit = (ksDocument2D?)sketchDef?.BeginEdit();
+            ksRectangleParam? rectangleParams = null;
+            if (this.kompasObject != null)
+            {
+                rectangleParams = (ksRectangleParam)this.kompasObject.GetParamStruct((short)StructType2DEnum.ko_RectangleParam);
+            }
+            if (rectangleParams != null)
+            {
+                rectangleParams.x = 0;
+                rectangleParams.y = 0;
+                rectangleParams.width = width;
+                rectangleParams.height = -depth;
+                rectangleParams.style = 1;
+                sketchEdit?.ksRectangle(rectangleParams);
+            }
+            sketchDef?.EndEdit();
+            CreateCutExtrusion(part, sketch, length);
         }
 
         private static ksEntity CreateSketch(ksPart part, short planeType)
